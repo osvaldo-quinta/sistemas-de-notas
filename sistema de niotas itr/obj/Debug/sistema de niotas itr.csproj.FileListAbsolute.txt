@@ -1,0 +1,10 @@
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\bin\Debug\sistema de niotas itr.exe.config
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\bin\Debug\sistema de niotas itr.exe
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\bin\Debug\sistema de niotas itr.pdb
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\obj\Debug\sistema de niotas itr.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\obj\Debug\sistema_de_niotas_itr.Form1.resources
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\obj\Debug\sistema_de_niotas_itr.Properties.Resources.resources
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\obj\Debug\sistema de niotas itr.csproj.GenerateResource.cache
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\obj\Debug\sistema de niotas itr.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\obj\Debug\sistema de niotas itr.exe
+C:\Users\Estudiante\Desktop\Sistema d notas\sistema de niotas itr\obj\Debug\sistema de niotas itr.pdb
