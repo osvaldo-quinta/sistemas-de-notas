@@ -31,30 +31,34 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gbRegistroNotas = new System.Windows.Forms.GroupBox();
-            this.gbPromedio = new System.Windows.Forms.GroupBox();
-            this.txtNota1 = new System.Windows.Forms.TextBox();
-            this.txtNota3 = new System.Windows.Forms.TextBox();
-            this.txtNota2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.lblPromedioObtenido = new System.Windows.Forms.Label();
-            this.lblNota1 = new System.Windows.Forms.Label();
-            this.lblNota2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNota3 = new System.Windows.Forms.Label();
+            this.lblNota2 = new System.Windows.Forms.Label();
+            this.lblNota1 = new System.Windows.Forms.Label();
+            this.txtNota2 = new System.Windows.Forms.TextBox();
+            this.txtNota3 = new System.Windows.Forms.TextBox();
+            this.txtNota1 = new System.Windows.Forms.TextBox();
+            this.gbPromedio = new System.Windows.Forms.GroupBox();
+            this.lblPromedioObtenido = new System.Windows.Forms.Label();
+            this.txtPromedio = new System.Windows.Forms.TextBox();
             this.gbAcciones = new System.Windows.Forms.GroupBox();
             this.btnAgregarPromedio = new System.Windows.Forms.Button();
             this.btnNuevoRegistro = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tlpAyuda = new System.Windows.Forms.ToolTip(this.components);
+            this.lblError = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.gbRegistroNotas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbPromedio.SuspendLayout();
             this.gbAcciones.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gbRegistroNotas
             // 
             this.gbRegistroNotas.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gbRegistroNotas.Controls.Add(this.label2);
+            this.gbRegistroNotas.Controls.Add(this.lblError);
             this.gbRegistroNotas.Controls.Add(this.pictureBox1);
             this.gbRegistroNotas.Controls.Add(this.lblNota3);
             this.gbRegistroNotas.Controls.Add(this.lblNota2);
@@ -70,69 +74,24 @@
             this.gbRegistroNotas.TabStop = false;
             this.gbRegistroNotas.Text = "Registro de Notas";
             // 
-            // gbPromedio
+            // pictureBox1
             // 
-            this.gbPromedio.BackColor = System.Drawing.Color.LavenderBlush;
-            this.gbPromedio.Controls.Add(this.lblPromedioObtenido);
-            this.gbPromedio.Controls.Add(this.textBox5);
-            this.gbPromedio.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPromedio.Location = new System.Drawing.Point(22, 283);
-            this.gbPromedio.Name = "gbPromedio";
-            this.gbPromedio.Size = new System.Drawing.Size(487, 155);
-            this.gbPromedio.TabIndex = 1;
-            this.gbPromedio.TabStop = false;
-            this.gbPromedio.Text = "Promedio";
+            this.pictureBox1.Image = global::sistema_de_niotas_itr.Properties.Resources.icons8_usuario_48;
+            this.pictureBox1.Location = new System.Drawing.Point(338, 66);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(118, 105);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
             // 
-            // txtNota1
+            // lblNota3
             // 
-            this.txtNota1.Location = new System.Drawing.Point(126, 48);
-            this.txtNota1.Name = "txtNota1";
-            this.txtNota1.Size = new System.Drawing.Size(100, 25);
-            this.txtNota1.TabIndex = 1;
-            this.tlpAyuda.SetToolTip(this.txtNota1, "Ingresa valores entre 0 y 10\r\n");
-            // 
-            // txtNota3
-            // 
-            this.txtNota3.Location = new System.Drawing.Point(126, 178);
-            this.txtNota3.Name = "txtNota3";
-            this.txtNota3.Size = new System.Drawing.Size(100, 25);
-            this.txtNota3.TabIndex = 2;
-            this.tlpAyuda.SetToolTip(this.txtNota3, "Ingresa valores entre 0 y 10\r\n\r\n");
-            // 
-            // txtNota2
-            // 
-            this.txtNota2.Location = new System.Drawing.Point(126, 109);
-            this.txtNota2.Name = "txtNota2";
-            this.txtNota2.Size = new System.Drawing.Size(100, 25);
-            this.txtNota2.TabIndex = 3;
-            this.tlpAyuda.SetToolTip(this.txtNota2, "Ingresa valores entre 0 y 10\r\n");
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(167, 62);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 28);
-            this.textBox5.TabIndex = 5;
-            this.tlpAyuda.SetToolTip(this.textBox5, "Ingresa valores entre 0 y 10\r\n");
-            // 
-            // lblPromedioObtenido
-            // 
-            this.lblPromedioObtenido.AutoSize = true;
-            this.lblPromedioObtenido.Location = new System.Drawing.Point(29, 65);
-            this.lblPromedioObtenido.Name = "lblPromedioObtenido";
-            this.lblPromedioObtenido.Size = new System.Drawing.Size(132, 23);
-            this.lblPromedioObtenido.TabIndex = 6;
-            this.lblPromedioObtenido.Text = "Promedio obtenido";
-            this.lblPromedioObtenido.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // lblNota1
-            // 
-            this.lblNota1.AutoSize = true;
-            this.lblNota1.Location = new System.Drawing.Point(50, 48);
-            this.lblNota1.Name = "lblNota1";
-            this.lblNota1.Size = new System.Drawing.Size(50, 18);
-            this.lblNota1.TabIndex = 4;
-            this.lblNota1.Text = "Nota 1";
+            this.lblNota3.AutoSize = true;
+            this.lblNota3.Location = new System.Drawing.Point(50, 185);
+            this.lblNota3.Name = "lblNota3";
+            this.lblNota3.Size = new System.Drawing.Size(50, 18);
+            this.lblNota3.TabIndex = 6;
+            this.lblNota3.Text = "Nota 3";
             // 
             // lblNota2
             // 
@@ -143,14 +102,71 @@
             this.lblNota2.TabIndex = 5;
             this.lblNota2.Text = "Nota 2";
             // 
-            // lblNota3
+            // lblNota1
             // 
-            this.lblNota3.AutoSize = true;
-            this.lblNota3.Location = new System.Drawing.Point(50, 185);
-            this.lblNota3.Name = "lblNota3";
-            this.lblNota3.Size = new System.Drawing.Size(50, 18);
-            this.lblNota3.TabIndex = 6;
-            this.lblNota3.Text = "Nota 3";
+            this.lblNota1.AutoSize = true;
+            this.lblNota1.Location = new System.Drawing.Point(50, 48);
+            this.lblNota1.Name = "lblNota1";
+            this.lblNota1.Size = new System.Drawing.Size(50, 18);
+            this.lblNota1.TabIndex = 4;
+            this.lblNota1.Text = "Nota 1";
+            // 
+            // txtNota2
+            // 
+            this.txtNota2.Location = new System.Drawing.Point(126, 109);
+            this.txtNota2.Name = "txtNota2";
+            this.txtNota2.Size = new System.Drawing.Size(100, 25);
+            this.txtNota2.TabIndex = 3;
+            this.tlpAyuda.SetToolTip(this.txtNota2, "Ingresa valores entre 0 y 10\r\n");
+            // 
+            // txtNota3
+            // 
+            this.txtNota3.Location = new System.Drawing.Point(126, 178);
+            this.txtNota3.Name = "txtNota3";
+            this.txtNota3.Size = new System.Drawing.Size(100, 25);
+            this.txtNota3.TabIndex = 2;
+            this.tlpAyuda.SetToolTip(this.txtNota3, "Ingresa valores entre 0 y 10\r\n\r\n");
+            // 
+            // txtNota1
+            // 
+            this.txtNota1.Location = new System.Drawing.Point(126, 48);
+            this.txtNota1.Name = "txtNota1";
+            this.txtNota1.Size = new System.Drawing.Size(100, 25);
+            this.txtNota1.TabIndex = 1;
+            this.tlpAyuda.SetToolTip(this.txtNota1, "Ingresa valores entre 0 y 10\r\n");
+            // 
+            // gbPromedio
+            // 
+            this.gbPromedio.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gbPromedio.Controls.Add(this.lblPromedioObtenido);
+            this.gbPromedio.Controls.Add(this.txtPromedio);
+            this.gbPromedio.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPromedio.Location = new System.Drawing.Point(22, 283);
+            this.gbPromedio.Name = "gbPromedio";
+            this.gbPromedio.Size = new System.Drawing.Size(487, 155);
+            this.gbPromedio.TabIndex = 1;
+            this.gbPromedio.TabStop = false;
+            this.gbPromedio.Text = "Promedio";
+            // 
+            // lblPromedioObtenido
+            // 
+            this.lblPromedioObtenido.AutoSize = true;
+            this.lblPromedioObtenido.Location = new System.Drawing.Point(29, 65);
+            this.lblPromedioObtenido.Name = "lblPromedioObtenido";
+            this.lblPromedioObtenido.Size = new System.Drawing.Size(139, 23);
+            this.lblPromedioObtenido.TabIndex = 6;
+            this.lblPromedioObtenido.Text = "Promedio obtenido";
+            this.lblPromedioObtenido.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtPromedio
+            // 
+            this.txtPromedio.Font = new System.Drawing.Font("Vivaldi", 8.25F);
+            this.txtPromedio.Location = new System.Drawing.Point(174, 62);
+            this.txtPromedio.Name = "txtPromedio";
+            this.txtPromedio.Size = new System.Drawing.Size(100, 21);
+            this.txtPromedio.TabIndex = 5;
+            this.tlpAyuda.SetToolTip(this.txtPromedio, "Ingresa valores entre 0 y 10\r\n");
+            this.txtPromedio.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // gbAcciones
             // 
@@ -178,7 +194,6 @@
             this.btnAgregarPromedio.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.tlpAyuda.SetToolTip(this.btnAgregarPromedio, "Gazenbo gazenbo GAZENBOOOOO");
             this.btnAgregarPromedio.UseVisualStyleBackColor = true;
-            this.btnAgregarPromedio.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnNuevoRegistro
             // 
@@ -205,22 +220,29 @@
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::sistema_de_niotas_itr.Properties.Resources.icons8_usuario_48;
-            this.pictureBox1.Location = new System.Drawing.Point(338, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(118, 105);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // tlpAyuda
             // 
             this.tlpAyuda.IsBalloon = true;
             this.tlpAyuda.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.tlpAyuda.ToolTipTitle = "Mensaje de Ayuda";
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(268, 178);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(62, 18);
+            this.lblError.TabIndex = 7;
+            this.lblError.Text = "ERROR";
+            this.lblError.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(268, 193);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 18);
+            this.label2.TabIndex = 8;
             // 
             // Form1
             // 
@@ -236,10 +258,10 @@
             this.Text = "Academia Gazebo";
             this.gbRegistroNotas.ResumeLayout(false);
             this.gbRegistroNotas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbPromedio.ResumeLayout(false);
             this.gbPromedio.PerformLayout();
             this.gbAcciones.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,7 +274,7 @@
         private System.Windows.Forms.TextBox txtNota2;
         private System.Windows.Forms.TextBox txtNota3;
         private System.Windows.Forms.TextBox txtNota1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPromedio;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnNuevoRegistro;
         private System.Windows.Forms.Label lblPromedioObtenido;
@@ -262,6 +284,8 @@
         private System.Windows.Forms.GroupBox gbAcciones;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolTip tlpAyuda;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblError;
     }
 }
 
